@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/dishes_list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="6dp"
+        android:layout_marginTop="6dp"
+        android:layout_weight="1">
+    </android.support.v7.widget.RecyclerView>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorPrimary"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/total_string"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="6dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="6dp"
+            android:layout_marginTop="6dp"
+            android:text="@string/total_price"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/text_size"/>
+
+        <TextView
+            android:id="@+id/total_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_margin="6dp"
+            android:layout_toRightOf="@id/total_string"
+            android:text="0.0"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/text_size"/>
+
+        <Button
+            android:id="@+id/submit_order"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_margin="6dp"
+            android:background="@drawable/bg_login"
+            android:text="提交订单"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text_size_small"/>
+    </RelativeLayout>
+
+</LinearLayout>
